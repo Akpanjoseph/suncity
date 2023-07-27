@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    margin: 0;
+    font-family: 'Roboto',Arial;
+    -webkit-font-smoothing:antialiased ;
+    -moz-osx-font-smoothing:grayscale;
+    background: #d5d4d4;
+}

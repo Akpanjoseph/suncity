@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Search from './Components/search/Search'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const hangleOnSearchChange = (searchData)=>{
+    console.log(searchData) //handle search data here
+  }
 
   return (
-    <div>
-      <p>hello </p>
+    <div className='container'>
+   <Search onSearchChange={hangleOnSearchChange}/>
     </div>
   )
 }
