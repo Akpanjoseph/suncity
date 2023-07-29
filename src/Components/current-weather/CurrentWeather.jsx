@@ -1,10 +1,10 @@
 import React from 'react';
 import './currentWeather.css'
-// import sunny from '../../../public/icons'
+
 
 const CurrentWeather = ({data}) => {
 
-    const image_url = '../../../public/icons'
+   
     return (
         <div className='weather'>
             <div className='top'>
@@ -13,7 +13,7 @@ const CurrentWeather = ({data}) => {
                     <p className='weather-decription'>{data.weather[0].description}</p>
                     {console.log(data)}
                 </div>
-            <img src={`${image_url}/${data.weather[0].icon}.png`} alt="weather" className='weather-icon' />
+            <img src={`icons/${data.weather[0].icon}.png`} alt="weather" className='weather-icon' />
             </div>
 
             <div className="bottom">
