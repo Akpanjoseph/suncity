@@ -4,7 +4,7 @@ import CurrentWeather from "./Components/current-weather/CurrentWeather";
 import Search from "./Components/search/Search";
 import { WEATHER_API_KEY, WEATHER_API_URL } from "./api";
 import Forecast from "./Components/forecast/Forecast";
-import Footer from "./Components/footer/Footer";
+
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -38,7 +38,7 @@ function App() {
 
       {forecast && <Forecast data={forecast} />}
 
-      <Footer/>
+     
     </div>
   );
 }
