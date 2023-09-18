@@ -32,6 +32,12 @@ function App() {
 
   return (
     <div className="container">
+
+      <h1 className="app-title">
+        <img src="icons/01d.png" alt="" />
+        <span> Suncity Weather Forcast</span>
+      </h1>
+
       <Search onSearchChange={hangleOnSearchChange} />
 
       {currentWeather && <CurrentWeather data={currentWeather} />}
